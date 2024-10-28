@@ -1,0 +1,117 @@
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #dcdcdc;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #000;
+    color: #00ffcc;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav a {
+    color: #00ffcc;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+#webgl-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+section {
+    padding: 60px;
+    margin: 40px auto;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.2);
+    border-radius: 10px;
+    animation: fade-in 1s ease forwards;
+}
+
+h2 {
+    color: #00ffcc;
+    border-bottom: 2px solid #00ffcc;
+    padding-bottom: 10px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.4);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #00ffcc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #000;
+    color: #00ffcc;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Animation and transition effects */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 0.8s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
